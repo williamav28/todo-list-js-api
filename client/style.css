@@ -1,0 +1,147 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #dbeafe, #eff6ff);
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  width: 100%;
+  max-width: 480px;
+  background: #fffffffa;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== TITLES ===== */
+h1 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 25px;
+}
+
+h2 {
+  color: #1e40af;
+  margin-bottom: 12px;
+}
+
+/* ===== INPUTS ===== */
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #1e40af;
+  transform: translateY(-1px);
+}
+
+/* Botão de sair da seção de tarefas */
+#tasksSection > button {
+  margin-top: 20px;
+}
+
+/* ===== MESSAGES ===== */
+.msg {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  margin-bottom: 20px; /* Adicionado um espaço maior após as mensagens */
+}
+
+/* ===== NEW TASK INPUT ROW FIX ===== */
+/* CORRIGINDO SINTAXE: display: flex 1; é inválido. */
+.task-input-row {
+  display: flex; /* Uso correto de flexbox */
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-input-row input {
+  flex: 1;
+  margin-bottom: 0; /* Remove a margem extra do input dentro do flex */
+}
+
+.task-input-row button {
+  width: 120px; /* Botão menor ao lado do input */
+  padding: 10px;
+}
+
+/* ===== TASK LIST ===== */
+ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+li {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+/* LEFT SIDE (checkbox + text) */
+.task-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1; /* Garante que o bloco de texto e checkbox ocupe o máximo de espaço */
+  overflow: hidden; /* Garante que o texto longo não quebre o layout */
+}
+
+.task-left span {
+  font-size: 1rem;
+  white-space: nowrap; /* Evita que o texto quebre em linha */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adiciona '...' se o texto for muito longo */
+}
+
+/* TASK LIST ITEMS FIXES */
+/* Ajusta o tamanho e alinhamento do checkbox */
+.task-left input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  /* Garante que o checkbox não pegue o style padrão de 'input' grande */
+  border: 1px solid #cbd5e1; 
+  cursor: pointer;
+  flex-shrink: 0; /* Impede o checkbox de encolher */
+}
+
+/* Buttons in tasks */
+.task-btn {
+  width: auto;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  flex-shrink: 0; /* Impede os botões de encolherem */
+}

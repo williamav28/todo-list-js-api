@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Lista de Tarefas</h1>
+
+    <!-- Cadastro -->
+    <section>
+      <h2>Cadastro</h2>
+      <input type="text" id="user" placeholder="Nome">
+      <input type="email" id="email" placeholder="Email">
+      <input type="password" id="password" placeholder="Senha">
+      <button onclick="postUser()">Cadastrar</button>
+      <div id="signupMsg" class="msg"></div>
+    </section>
+
+    <!-- Login -->
+    <section>
+      <h2>Login</h2>
+      <input type="email" id="loginEmail" placeholder="Email">
+      <input type="password" id="loginPassword" placeholder="Senha">
+      <button onclick="loginUser()">Entrar</button>
+      <div id="loginMsg" class="msg"></div>
+    </section>
+
+    <!-- Tarefas -->
+    <section id="tasksSection" style="display:none">
+
+      <h2>Tarefas</h2>
+
+      <div class="task-input-row">
+        <input type="text" id="newTaskTitle" placeholder="Digite uma nova tarefa...">
+        <button onclick="createTask()">Adicionar</button>
+      </div>
+
+      <ul id="tasksList"></ul>
+
+      <div id="tasksMsg" class="msg"></div>
+
+      <button onclick="logoutUser()">Sair</button>
+
+    </section>
+
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
