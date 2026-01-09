@@ -70,3 +70,17 @@ O sistema permite que usuários se cadastrem, façam login e gerenciem suas pró
 1. Clone o repositório
 2. Abra o arquivo `index.html` no navegador
 3. Certifique-se de que a API esteja rodando em:
+   `http://127.0.0.1:8000`
+
+---
+
+## 📚 Contexto Acadêmico
+
+Projeto desenvolvido durante a graduação em Engenharia da Computação, com o objetivo de consolidar conhecimentos em desenvolvimento web, lógica de programação e integração front-end com APIs.
+
+---
+
+## 📌 Observações
+
+Este projeto representa uma etapa inicial/intermediária da minha evolução em desenvolvimento web.  
+Projetos mais recentes utilizam frameworks modernos como **React.js** e **Tailwind CSS**, com maior foco em componentização e escalabilidade.
