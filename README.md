@@ -55,7 +55,7 @@ O sistema permite que usuários se cadastrem, façam login e gerenciem suas pró
 
 ## 📸 Preview
 
-![Tela Inicial](imagens/paginaInicial.png)
+![Tela Inicial](Imagens/paginaInicial.png)
 
 ---
 
